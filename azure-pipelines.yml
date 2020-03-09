@@ -20,7 +20,8 @@ steps:
 #- task: NuGetCommand@2
  # inputs:
  #  restoreSolution: '$(solution)'
-
+- script: dir
+  workingDirectory: 'C:\Temp'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
